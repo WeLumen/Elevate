@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #9f0726;
+    --secondary-color: #fff;
+    --accent-color: #450413;
+    --background-color: #f1f1f1;
+    --background-color-secondary: #faf1e8;
+    --text-color: #333;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 110px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+  
+  }
+  
+  .header .logo img {
+    height: 70px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 13px; /* Define o tamanho da fonte */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .menu a.active{
+    color: var(--primary-color);
+  }
+  
+  .menu a:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+  .menu-toggle {
+    display: none; /* Esconde o ícone do menu no desktop */
+  }
+
+  .close-menu {
+    display: none; /* Esconde o botão X no desktop */
+  }
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+
+    .header {
+      padding: 10px 20px; /* Reduzindo a margem para telas menores */
+      justify-content: space-between; /* Garante espaçamento entre os elementos */
+    }
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--secondary-color);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      z-index: 10; /* Coloca o menu na frente da section */
+    }
+  
+    .menu.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens na horizontal */
+        gap: 15px; /* Espaçamento entre os itens */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .menu ul li a {
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+      }   
+        
+    .menu-toggle {
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background-color: var(--primary-color);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: var(--text-color);
+      z-index: 1002;
+      display: block; /* Exibe o botão X apenas no mobile quando o menu está aberto */
+    }
+
+    .menu a:hover {
+        color: var(--background-color);
+        background-color: var(--primary-color);
+      }
+  }
