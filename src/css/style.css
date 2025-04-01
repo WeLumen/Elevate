@@ -307,7 +307,7 @@ h1, p {
 
 .course-section-03 {
   position: relative;
-  background-image: url(/src/img/banner3.jpg); /* Verifique o caminho */
+  background-image: url(/src/img/banner5.jpg); /* Verifique o caminho */
   background-size: cover;
   background-position: center;
   background-attachment: scroll; /* Alterado para melhor compatibilidade */
