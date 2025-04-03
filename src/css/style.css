@@ -959,6 +959,15 @@ h1, p {
     font-size: 0.9rem;
   }
 
+  .course-section-01 {
+    flex-direction: column; /* Empilha os elementos */
+    align-items: center;
+}
+
+.course-text, .course-benefits {
+    max-width: 100%; /* Ajusta para ocupar toda a tela */
+}
+
   .course-container-01 {
     flex-direction: column; /* Muda o layout para coluna em telas menores */
     height: auto; /* Ajusta a altura automaticamente */
@@ -989,7 +998,14 @@ h1, p {
   .course-text-01 h3 {
     font-size: 1rem; /* Ajusta o tamanho da fonte do subtítulo */
   }
+  .course-section-04 {
+    flex-direction: column; /* Empilha os elementos em telas pequenas */
+    align-items: center;
+}
 
+.course-text, .course-benefits {
+    max-width: 100%; /* Ocupa toda a largura disponível */
+}
   .course-details ul {
     grid-template-columns: 1fr; /* Muda para uma coluna em telas menores */
   }
