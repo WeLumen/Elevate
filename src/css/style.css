@@ -290,7 +290,7 @@ h1, p {
 }
 .course-section-05 {
   position: relative;
-  background-image: url(/src/img/banner4.jpg); /* Substitua pela URL do seu banner */
+  background-image: url(/src/img/banner6.jpg); /* Substitua pela URL do seu banner */
   background-size: cover;
   background-attachment: fixed; /* Parallax effect */
   background-position: center;
@@ -925,6 +925,11 @@ h1, p {
   .course-container-01 {
     background-attachment: scroll;
   }
+
+  .course-section-05 {
+    flex-direction: column; /* Empilha os blocos verticalmente */
+    text-align: center;
+  }
 }
 
 /* Responsividade para telas pequenas (celulares) */
@@ -1086,6 +1091,11 @@ h1, p {
   container-module {
     max-width: 100%;
     padding: 0 10px; /* Ajusta o padding nas telas menores */
+  }
+
+  .course-section-05 {
+    padding: 30px 15px;
+    background-attachment: scroll; /* Remove parallax em dispositivos móveis */
   }
 
   .module-title {
