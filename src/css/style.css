@@ -288,6 +288,20 @@ h1, p {
   font-weight: bold;/* Define a largura da borda */
 
 }
+
+.course-section-07 {
+    position: relative;
+    background-image: url(/src/img/Banner7.jpg); /* Substitua pela URL do seu banner */
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    padding: 40px 20px;
+    margin-top: 0px;
+    color: #fff; /* Definindo a cor do texto padrão */
+    display: flex; /* Exibe os dois blocos lado a lado */
+    justify-content: space-between;
+    align-items: center;
+  }
 .course-section-05 {
   position: relative;
   background-image: url(/src/img/banner6.jpg); /* Substitua pela URL do seu banner */
