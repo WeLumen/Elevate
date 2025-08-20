@@ -1453,7 +1453,7 @@ blockquote {
 }
 
 .conclusion-text {
-  background-color: #c9e4ee;
+  background-color: #ecd6d668;
   padding: 3px;
 }
 
@@ -1621,9 +1621,14 @@ blockquote {
       margin-bottom: 40px;
     }
 
-    .section-box h2 {
-      color: #9f0726; /* vermelho */
-      margin-bottom: 10px;
+    .section-box h3 {
+      color: #9f0726;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+    }
+     .section-box h2 {
+      color: #9f0726;
+  font-size: 2.2rem;
     }
 
     .section-box p {
@@ -1636,6 +1641,10 @@ blockquote {
       padding-left: 20px;
       color: #333; /* bullets azul esverdeado */
     }
+    .section-box em {
+  font-style: italic;
+  color: #9f0726;
+} 
 
      .section-box1 {
       margin-bottom: 40px;
@@ -1738,16 +1747,42 @@ blockquote {
   text-decoration: underline;
 }
 
-.voice-card, .tool-card {
+
+.content-block {
   background-color: #ecd6d668;
-  padding: 1rem 1.5rem;
-  margin: 1rem 0;
-  border-left: 5px solid #9f0726;
-  border-radius: 6px;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  border-left: 5px solid #9f0726; /* se quiser o destaque do card */
 }
 
-.tools {
-  margin-top: 2rem;
+/* Títulos dentro do bloco */
+.content-block h3 {
+  color: #9f0726;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* Listas dentro do bloco */
+.content-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.content-block ul li {
+  margin-bottom: 12px;
+}
+
+/* Parágrafos dentro do bloco */
+.content-block p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+/* Ênfase dentro do bloco */
+.content-block em {
+  font-style: italic;
+  color: #9f0726;
 }
 
 
