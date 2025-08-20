@@ -664,36 +664,7 @@ h1, p {
   margin-bottom: 10px;
 }
 
-.course-overview {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 8px;
-}
 
-.course-overview h2 {
-  margin-bottom: 10px;
-  color: var(--text-color);
-  border-bottom: 2px solid var(--primary-color);
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.course-overview p {
-  margin: 10px 0;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.course-overview ul {
-  padding-left: 20px;
-  margin-top: 10px;
-}
-
-.course-overview ul li {
-  margin-bottom: 8px;
-  font-weight: 500;
-}
 
 .container-cursos {
   text-align: center;
@@ -1784,6 +1755,77 @@ blockquote {
   font-style: italic;
   color: #9f0726;
 }
+
+/* Estilos para a main do curso */
+.course-main {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Estilos para a introdução */
+.course-intro {
+  margin-bottom: 30px;
+}
+
+.course-intro h1 {
+  font-size: 2em;
+  color: #9f0726;
+  margin-bottom: 20px;
+}
+
+.course-intro p {
+  font-size: 1.1em;
+  color:#333;
+  line-height: 1.6;
+}
+
+/* Estilos para a seção de módulos */
+.course-modules h2 {
+  font-size: 1.8em;
+  color: #9f0726;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-module {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-module h3 {
+  font-size: 1.6em;
+  color: #9f0726;
+  margin-bottom: 10px;
+}
+
+.course-module p {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.course-module em {
+  font-style: italic;
+  color: #333;
+}
+
+/* Estilo para os títulos dentro de cada módulo */
+.course-module strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Adicionando um pequeno espaço ao final de cada módulo */
+.course-module:last-child {
+  margin-bottom: 0;
+}
+
 
 
 
