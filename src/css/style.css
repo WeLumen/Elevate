@@ -1826,6 +1826,32 @@ blockquote {
   margin-bottom: 0;
 }
 
+.framework {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.framework-item {
+    flex: 1 1 calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.framework-item h3 {
+    font-size: 1.2rem;
+}
+
+.framework-item p {
+    font-size: 1rem;
+}
+
+
+
+
 
 
 
